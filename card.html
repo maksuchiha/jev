@@ -704,7 +704,7 @@
                 <div class="more__text">
                     Как купить сегодня,<br> а заплатить только 25%
                 </div>
-                <button class="more__button">Подробнее</button>
+                <button class="more__button" data-toggle="#more">Подробнее</button>
             </div>
         </div>
     </section>
@@ -850,7 +850,7 @@
 <div class="menu">
     <div class="menu__top">
         меню
-        <span class="menu__close">+</span>
+        <span class="menu__close" data-close>+</span>
     </div>
     <div class="menu__banner">
         купите на 9999 и заберите базовое кольцо в подарок
@@ -868,9 +868,9 @@
         <li><a href="#">контакты</a></li>
     </ul>
 </div>
-<div class="overlay">
+<div class="overlay" id="more">
     <div class="modal">
-        <button class="modal__close">+</button>
+        <button class="modal__close" data-close>+</button>
         <span class="modal__top"></span>
         <a href="#" class="modal__logo">
             <svg width="105" height="16" viewBox="0 0 105 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -945,6 +945,7 @@
 </div>
 <div class="overlay" id="gift">
     <div class="gift">
+        <button class="gift__close" data-close>+</button>
         <div class="gift__size">
             <div class="gift__size-text">Буква</div>
             <div class="gift__size-number">
@@ -1030,7 +1031,21 @@
                 <label for="овен">овен</label>
             </div>
             <div class="gift__znak-more">
-                другой  буква
+                едино-рог
+            </div>
+        </div>
+        <div class="gift__length">
+            <div class="gift__length-text">длина</div>
+            <div class="gift__length-number">
+                <input type="radio" id="40" name="length" checked value="40" hidden>
+                <label for="40">40</label>
+                <input type="radio" id="45" name="length" value="45" hidden>
+                <label for="45">45</label>
+                <input type="radio" id="50" name="length" value="50" hidden>
+                <label for="50">50</label>
+            </div>
+            <div class="gift__length-more">
+                Другая
             </div>
         </div>
     </div>
